@@ -18,6 +18,8 @@ function App() {
     const [quality, setQuality] = useState(75);
 
     const handleChange = (fileList) => {
+        setNewFiles([]);
+        setDownloadUrl(null);
         const fileArray = Array.from(fileList);
         setFiles(fileArray);
 
